@@ -6,8 +6,16 @@ En este proyecto se exponen las herramientas de hardware y software necesarias p
 - Dispositivo LimeSDR de la empresa Microsystems
 - Dos o mas celulares para hacer prueba de funcionamiento.
 
-###Introducción
+### LimeSDR
 
-###Instalación 
+### OSMOCOM
+OSMOCOM es un proyecto sobre comunicaciones móviles de código abierto que permite instalar sus dependencias sin ninguna restricción, existe desde finales del 2008 y es un proyecto comunitario clásico dirigido por entusiastas. Con la desventaja de ser para personas expertas en comunicaciones. OSMOCOM ofrece los siguientes proyectos:
+- Las implementaciones GSM y 3G del lado de la red originalmente conocidas como OpenBSC (pero ahora incluyen BTS, PCU, BSC, MSC, HLR, PCU, SGSN, GGSN)
+- Implementación GSM del lado del teléfono OsmocomBB
+- El proyecto RTL-SDR utilizado para la transmisión y recepción de televisión digital.
+- OsmoNitb que implementa la arquitectura de una red celular 2G para principiantes en el área de comunicaciones.
 
-###Resultados
+
+### Instalación 
+
+### Resultados
