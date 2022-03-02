@@ -15,7 +15,7 @@ Dispositivo creado por microsystems. Es el dispositivo utilizado en este trabajo
 - Entradas / salidas generales del usuario: 2 x doble color (rojo + verde) LED, 8 x cabezal de pin FPGA GPIO (3.3 V)
 - Conectividad: USB 3.0 Tipo A, 2 x conectores RF coaxiales (SMA) (cada uno puede cambiarse entre bandas de alta y baja frecuencia), Conector UFL para fuente de reloj externa, Cabeceras FPGA GPIO, Conector FPGA JTAG
 - Sistema de reloj: VCTCXO a bordo de 30.72 MHz, Posibilidad de sintonizar VCTCXO con DAC incorporado, Entrada de reloj externa a través del conector UFL.
-![](https://www.facebook.com/500334253366835/photos/a.5213953982004815/5213953868671493/)
+![](/img/LimeSDRmini.png "LimeSDR mini")
 
 ### OSMOCOM
 OSMOCOM es un proyecto sobre comunicaciones móviles de código abierto que permite instalar sus dependencias sin ninguna restricción, existe desde finales del 2008 y es un proyecto comunitario clásico dirigido por entusiastas. Con la desventaja de ser para personas expertas en comunicaciones. OSMOCOM ofrece los siguientes proyectos:
