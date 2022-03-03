@@ -6,8 +6,10 @@ En este proyecto se exponen las herramientas de hardware y software necesarias p
 - Dispositivo LimeSDR de la empresa Microsystems
 - Dos o mas celulares para hacer prueba de funcionamiento.
 
-### LimeSDR
-Dispositivo creado por microsystems. Es el dispositivo utilizado en este trabajo por lo que se explicaran en detalle las características más relevantes.
+### SDR
+El termino Radio Definido por Sotware (SDR) se refiere a una radio reconfigurable. Es decir, una radio que a partir de un programa de software puede variar sus parámetros sin tener que recurrir al hardware. Anteriormente solo se podía hacer por hardware lo que provocaba limitaciones al momento de una actualización de ese dispositivo de radiofrecuencia. Por ejemplo, la radio FM y AM, estos radios para poder capturar los datos de voz, emitidos por la antena transmisora, tenían que modificar un parámetro de hardware para sintonizar la frecuencia, ya fuera variar la capacitancia o resistencia. Con la aparición del SDR ese mismo proceso se hace desde el software sintonizando muy fácil, además no solo poder sintonizar un rango de frecuencias pequeño si no que ahora se puede capturar un rango grande de frecuencias y sintonizar varios estándares con modulaciones diferentes, es decir se pueden ver señales de estándares como AM, FM y hasta televisión digital que se encuentra en otra frecuencia y tiene otro tipo de modulación.
+![](/img/SDR.png "SDR") 
+El dispositivo SDR nos permitira hacer la transmicion y recepcion de los mensajes SMS y voz. LimeSDR es un  dispositivo creado por microsystems es utilizado en este trabajo por lo que se explicaran en detalle las características más relevantes.
 - Transceptor RF: Lime Microsystems LMS7002M
 - FPGA : Intel Altera MAX 10 (10M16SAU169C8G), empaquetado de 169 pines, 549 KB de memoria M9K, 2,368 KB de memoria flash del usuario, 4 x PLL, 45 multiplicadores de 18x18 bits, 130 x entrada / salida de propósito general (GPIO), Tensión de alimentación única, Característica de flash, Configuración de FPGA a través de JTAG
 - Memoria EEPROM: 2 x 128 KB para el firmware y los datos del MCU transceiver RF
@@ -16,6 +18,7 @@ Dispositivo creado por microsystems. Es el dispositivo utilizado en este trabajo
 - Conectividad: USB 3.0 Tipo A, 2 x conectores RF coaxiales (SMA) (cada uno puede cambiarse entre bandas de alta y baja frecuencia), Conector UFL para fuente de reloj externa, Cabeceras FPGA GPIO, Conector FPGA JTAG
 - Sistema de reloj: VCTCXO a bordo de 30.72 MHz, Posibilidad de sintonizar VCTCXO con DAC incorporado, Entrada de reloj externa a través del conector UFL.
 ![](/img/LimeSDRmini.png "LimeSDR mini")
+LimeSDR permitira la transmisión y recepción de ondas de radio a diferentes frecuencias, 
 
 ### OSMOCOM
 OSMOCOM es un proyecto sobre comunicaciones móviles de código abierto que permite instalar sus dependencias sin ninguna restricción, existe desde finales del 2008 y es un proyecto comunitario clásico dirigido por entusiastas. Con la desventaja de ser para personas expertas en comunicaciones. OSMOCOM ofrece los siguientes proyectos:
