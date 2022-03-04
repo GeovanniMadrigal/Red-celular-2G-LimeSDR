@@ -92,15 +92,15 @@ cd ../
 
 #### OSMO-BTS y OSMO-NITB
 ~~~
--Wget http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/Release.key
--sha256sum Release.key
--apt-key add Release.key
--rm Release.key
--echo "deb http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/ ./" > /etc/apt/sources.list.d/osmocom-latest.list
--apt update
--apt install osmocom-nitb osmo-bts-trx telnet
--systemctl disable osmo-bts-trx.service
--systemctl disable osmo-nitb.service
+Wget http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/Release.key
+sha256sum Release.key
+apt-key add Release.key
+rm Release.key
+echo "deb http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/ ./" > /etc/apt/sources.list.d/osmocom-latest.list
+apt update
+apt install osmocom-nitb osmo-bts-trx telnet
+systemctl disable osmo-bts-trx.service
+systemctl disable osmo-nitb.service
 
 ~~~
 ### Resultados
