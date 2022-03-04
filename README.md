@@ -8,6 +8,7 @@ En este proyecto se exponen las herramientas de hardware y software necesarias p
 
 ### SDR
 El termino Radio Definido por Sotware (SDR) se refiere a una radio reconfigurable. Es decir, una radio que a partir de un programa de software puede variar sus parámetros sin tener que recurrir al hardware. Anteriormente solo se podía hacer por hardware lo que provocaba limitaciones al momento de una actualización de ese dispositivo de radiofrecuencia. Por ejemplo, la radio FM y AM, estos radios para poder capturar los datos de voz, emitidos por la antena transmisora, tenían que modificar un parámetro de hardware para sintonizar la frecuencia, ya fuera variar la capacitancia o resistencia. Con la aparición del SDR ese mismo proceso se hace desde el software sintonizando muy fácil, además no solo poder sintonizar un rango de frecuencias pequeño si no que ahora se puede capturar un rango grande de frecuencias y sintonizar varios estándares con modulaciones diferentes, es decir se pueden ver señales de estándares como AM, FM y hasta televisión digital que se encuentra en otra frecuencia y tiene otro tipo de modulación.
+
 ![](/img/SDR.png "SDR") 
 El dispositivo SDR nos permitira hacer la transmicion y recepcion de los mensajes SMS y voz. LimeSDR es un  dispositivo creado por microsystems es utilizado en este trabajo por lo que se explicaran en detalle las características más relevantes.
 - Transceptor RF: Lime Microsystems LMS7002M
@@ -38,6 +39,24 @@ OsmoTRX se basa en el código del transceptor del proyecto OpenBTS , pero se con
 #### OSMO-NITB Y OSMO-BTS
 OsmoNITB implementa todo lo necesario para una red de conmutación GSM, esto de manera limitada, ya que en la actualidad ya no se le da soporte a esta parte. OsmoNITB se encarga de todo el subsistema de conmutación de red, desde el MSC hasta las bases de datos HLR y VLR.
 
-### Instalación 
+![](/img/Implementacion2G.png "Arquitectura de red 2G") 
 
+### Instalación 
+#### LimeSuite
+~~~ 
+apt install git g++ cmake libsqlite3-dev libusb-1.0-0-dev
+apt install “nombre de la librería” 
+
+git clone https://github.com/myriadrf/LimeSuite.git
+cd LimeSuite
+mkdir construir && cd construir
+cmake ../
+make
+make install
+ldconfig
+cd ../
+sh LimeSuite/udev-rules/install.sh
+CD ../
+
+~~~
 ### Resultados
