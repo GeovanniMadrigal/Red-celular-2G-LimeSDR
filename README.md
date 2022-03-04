@@ -58,5 +58,49 @@ cd ../
 sh LimeSuite/udev-rules/install.sh
 CD ../
 
+apt install libtool pkg-config libtalloc-dev libgnutls28-dev
+~~~
+
+#### LIBOSMOCORE
+~~~
+apt install libtool pkg-config libtalloc-dev libgnutls28-dev
+
+git clone git://git.osmocom.org/libosmocore
+cd libosmocore
+autoreconf -fi
+./configure
+make
+make install
+ldconfig
+cd ../
+~~~
+
+#### OSMO-TRX-LMS
+~~~ 
+apt install libfftw3-dev
+
+git clone git://git.osmocom.org/osmo-trx
+cd osmo-trx
+autoreconf -fi
+./configure --without-uhd --with-lms
+make
+make install
+ldconfig
+cd ../
+
+~~~
+
+#### OSMO-BTS y OSMO-NITB
+~~~
+-Wget http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/Release.key
+-sha256sum Release.key
+-apt-key add Release.key
+-rm Release.key
+-echo "deb http://download.opensuse.org/repositories/network:/osmocom:/latest/Raspbian_9.0/ ./" > /etc/apt/sources.list.d/osmocom-latest.list
+-apt update
+-apt install osmocom-nitb osmo-bts-trx telnet
+-systemctl disable osmo-bts-trx.service
+-systemctl disable osmo-nitb.service
+
 ~~~
 ### Resultados
