@@ -104,3 +104,12 @@ systemctl disable osmo-nitb.service
 
 ~~~
 ### Resultados
+Para ejecutar los archivos de configuracion de la arquitectura de OSMOCOM utilizamos los siguientes comandos en terminales diferentes ya que generara un proceso que se estara ejecutando de manera indeterminada hasta que decidamos detenerlo:
+~~~
+osmo-trx-lms -C ./osmo-trx.cfg
+osmo-nitb -C ./openbsc.cfg
+osmo-bts-trx -C ./osmo-bts.cfg
+~~~
+Al final tendran la ejecución de tres ventanas como se muestra en el [video][video] que se encuentra en la ruta de este repositorio. 
+
+[video]: https://github.com/GeovanniMadrigal/Red-celular-2G-LimeSDR/tree/main/video
