@@ -112,4 +112,7 @@ osmo-bts-trx -C ./osmo-bts.cfg
 ~~~
 Al final tendran la ejecución de tres ventanas como se muestra en el [video][video] que se encuentra en la ruta de este repositorio. 
 
+Para una información mas completa del funcionamiento de este trabajo recomiendo leer el proyecto de [Tesis][Tesis].
+
 [video]: https://github.com/GeovanniMadrigal/Red-celular-2G-LimeSDR/tree/main/video
+[Tesis]:https://github.com/GeovanniMadrigal/Red-celular-2G-LimeSDR/blob/main/Tesis.pdf
